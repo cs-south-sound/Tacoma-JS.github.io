@@ -14,10 +14,10 @@ have suggested.
 
 ### Overview
 
-See this letter [posted]() on our meetup site.
+See this letter [posted](https://github.com/Tacoma-JS/Tacoma-JS.github.io/blob/master/welcome.md) on our meetup site.
 
 When you signed up for this meetup there were two
-profile questions/hints regarding:
+profile questions / hints regarding:
 * [codepen free](https://codepen.io/signup/free)
 * [github join](https://github.com/join)
 
@@ -26,11 +26,10 @@ not idle "what's up?" kinds of questions but rather
 _strong_ hints about how to engage with the meetup.
 If you have not created an account with these powerful
 complimentary collaboration tools it is strongly
-recommended right now.  The answers are also a way
-for us to filter out serious coders from spammers.
+recommended right now.
 
 Although everyone who signs up says they are a
-beginner I have found there are some who arrive with
+beginner we have found there are some who arrive with
 years of programming experience and need to add
 another language to their tool chest and others who
 are truly just beginning their studies.
@@ -61,7 +60,7 @@ real web index.html page and subdirectories are
 extracted.  You can then inspect and test the
 example files to get an understanding for how they
 are related and function in the browser without
-the pen sandbox.
+the pen [sandbox](https://en.wikipedia.org/wiki/Sandbox_%28software_development%29).
 
 Check out the [codepen.io](http://codepen.io/)
 introductory videos:
@@ -72,7 +71,7 @@ introductory videos:
 * [JS](https://www.youtube.com/watch?v=jgB5ncR4ygA)
 
 Coding is definitely nontrivial and requires
-significant dedication to acheive the skills.
+significant dedication to achieve the skills.
 The good news is that excellent complimentary
 courses are available for Tacoma Pierce County
 [Library](http://www.piercecountylibrary.org/) cardholders
@@ -99,8 +98,9 @@ a Representational state transfer [RESTful](https://en.wikipedia.org/wiki/Repres
 Uniform Resource Identifier [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier).
 
 Before assuming that you can access remote data learn
-about CORS. You definitely do not want to have to learn
-about that the hard way.
+about [CORS](http://vividventures.biz/d/?q=node/38).
+You definitely do not want to have to learn about
+that the hard way.
 
 ### Patterns of success
 * Learn language syntax, style, and data structures.
@@ -111,5 +111,5 @@ about that the hard way.
 
 
 ### Misc Topics Links
-General discussion about front end develpment
+General discussion about front end development
 http://www.paulirish.com/2012/interview-on-treehouse/
