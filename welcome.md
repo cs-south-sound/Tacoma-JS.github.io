@@ -48,13 +48,13 @@ put it out there and work with whomever attends.
 
 One comment the newly initiated often make is "How
 does javascript fit into a web page?"  They see the
-simple example mocked up in fiddle or codepen and
-know that the example is contrived and not exactly
-the real thing.  They want to know how to make the
-leap from writing example code to weaving it into
-their own web page.  A quick solution in codepen
-is to use the share button to download a zip file
-of the project to a working directory on your
+simple example mocked up in [fiddle](https://jsfiddle.net/)
+or codepen and know that the example is contrived and
+not exactly the real thing.  They want to know how
+to make the leap from writing example code to weaving
+it into their own web page.  A quick solution in
+codepen is to use the share button to download a zip
+file of the project to a working directory on your
 local drive or remote web server. Once unzipped a
 real web index.html page and subdirectories are
 extracted.  You can then inspect and test the
@@ -76,8 +76,15 @@ The good news is that excellent complimentary
 courses are available for Tacoma Pierce County
 [Library](http://www.piercecountylibrary.org/) cardholders
 through:
-* [Teamtreehouse.com](https://teamtreehouse.com/gateways/pierce_county_public_library/signup?)
 * [Lynda.com](https://www.lynda.com/portal/sip?org=piercecountylibrary.org)
+
+We are also offering meetups to work through the
+challenges at:
+* [freecodecamp.com](https://www.freecodecamp.com/)
+* freecodecamp tacoma group on [facebook](https://www.facebook.com/groups/free.code.camp.tacoma/)
+
+You may also find helpful the [skills ladder](http://www.riversidejs.net/skills_ladder.php)
+presented  by [Riverside-JS](http://www.riversidejs.net/index.php) [meetup](http://www.meetup.com/RiversideJS/).
 
 Sign up right now, it will be well worth your effort.
 There are single courses, introductory courses and
@@ -94,11 +101,10 @@ my web pages communicate with my web server and database
 to store and retrieve my data.  An experienced developer
 might even suggest designing the data model and database
 first.  Communication with the database is done via
-a Representational state transfer [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) interface and
-Uniform Resource Identifier [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier).
+a Representational state transfer [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) interface and Uniform Resource Identifier [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier).
 
 Before assuming that you can access remote data learn
-about [CORS](http://vividventures.biz/d/?q=node/38).
+about [CORS](http://vividventures.biz/d/?q=cors).
 You definitely do not want to have to learn about
 that the hard way.
 
