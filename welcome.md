@@ -14,10 +14,10 @@ have suggested.
 
 ### Overview
 
-See this letter [posted]() on our meetup site.
+See this letter [posted](https://github.com/Tacoma-JS/Tacoma-JS.github.io/blob/master/welcome.md) on our meetup site.
 
 When you signed up for this meetup there were two
-profile questions/hints regarding:
+profile questions / hints regarding:
 * [codepen free](https://codepen.io/signup/free)
 * [github join](https://github.com/join)
 
@@ -26,11 +26,10 @@ not idle "what's up?" kinds of questions but rather
 _strong_ hints about how to engage with the meetup.
 If you have not created an account with these powerful
 complimentary collaboration tools it is strongly
-recommended right now.  The answers are also a way
-for us to filter out serious coders from spammers.
+recommended right now.
 
 Although everyone who signs up says they are a
-beginner I have found there are some who arrive with
+beginner we have found there are some who arrive with
 years of programming experience and need to add
 another language to their tool chest and others who
 are truly just beginning their studies.
@@ -49,19 +48,19 @@ put it out there and work with whomever attends.
 
 One comment the newly initiated often make is "How
 does javascript fit into a web page?"  They see the
-simple example mocked up in fiddle or codepen and
-know that the example is contrived and not exactly
-the real thing.  They want to know how to make the
-leap from writing example code to weaving it into
-their own web page.  A quick solution in codepen
-is to use the share button to download a zip file
-of the project to a working directory on your
+simple example mocked up in [fiddle](https://jsfiddle.net/)
+or codepen and know that the example is contrived and
+not exactly the real thing.  They want to know how
+to make the leap from writing example code to weaving
+it into their own web page.  A quick solution in
+codepen is to use the share button to download a zip
+file of the project to a working directory on your
 local drive or remote web server. Once unzipped a
 real web index.html page and subdirectories are
 extracted.  You can then inspect and test the
 example files to get an understanding for how they
 are related and function in the browser without
-the pen sandbox.
+the pen [sandbox](https://en.wikipedia.org/wiki/Sandbox_%28software_development%29).
 
 Check out the [codepen.io](http://codepen.io/)
 introductory videos:
@@ -72,13 +71,20 @@ introductory videos:
 * [JS](https://www.youtube.com/watch?v=jgB5ncR4ygA)
 
 Coding is definitely nontrivial and requires
-significant dedication to acheive the skills.
+significant dedication to achieve the skills.
 The good news is that excellent complimentary
 courses are available for Tacoma Pierce County
 [Library](http://www.piercecountylibrary.org/) cardholders
 through:
-* [Teamtreehouse.com](https://teamtreehouse.com/gateways/pierce_county_public_library/signup?)
 * [Lynda.com](https://www.lynda.com/portal/sip?org=piercecountylibrary.org)
+
+We are also offering meetups to work through the
+challenges at:
+* [freecodecamp.com](https://www.freecodecamp.com/)
+* freecodecamp tacoma group on [facebook](https://www.facebook.com/groups/free.code.camp.tacoma/)
+
+You may also find helpful the [skills ladder](http://www.riversidejs.net/skills_ladder.php)
+presented  by [Riverside-JS](http://www.riversidejs.net/index.php) [meetup](http://www.meetup.com/RiversideJS/).
 
 Sign up right now, it will be well worth your effort.
 There are single courses, introductory courses and
@@ -95,12 +101,12 @@ my web pages communicate with my web server and database
 to store and retrieve my data.  An experienced developer
 might even suggest designing the data model and database
 first.  Communication with the database is done via
-a Representational state transfer [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) interface and
-Uniform Resource Identifier [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier).
+a Representational state transfer [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) interface and Uniform Resource Identifier [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier).
 
 Before assuming that you can access remote data learn
-about CORS. You definitely do not want to have to learn
-about that the hard way.
+about [CORS](http://vividventures.biz/d/?q=cors).
+You definitely do not want to have to learn about
+that the hard way.
 
 ### Patterns of success
 * Learn language syntax, style, and data structures.
@@ -111,5 +117,5 @@ about that the hard way.
 
 
 ### Misc Topics Links
-General discussion about front end develpment
+General discussion about front end development
 http://www.paulirish.com/2012/interview-on-treehouse/
