@@ -117,5 +117,6 @@ that the hard way.
 
 
 ### Misc Topics Links
-General discussion about front end development
+* General discussion about front end development
 http://www.paulirish.com/2012/interview-on-treehouse/
+* Angelina Fabbro: I am not an expert developer. I am also not a beginning developer. [video](https://www.youtube.com/watch?v=v0TFmdO4ZP0)
