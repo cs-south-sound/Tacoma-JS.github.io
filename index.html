@@ -127,6 +127,28 @@
         </div>
     </div>
 
+    <!-- some react containers-->
+    <!-- copied from the tutorial:
+         https://www.lynda.com/React-js-tutorials/Creating-React-component/519668/542821-4.html?autoplay=true
+    -->
+    <div id="react-container"></div>
+    <script type="text/babel">
+        var init = function Init(){
+            var MyComponent = React.createClass({
+              render() {
+                return <div>
+                    <h1>Hello World</h1>
+                    <p>First react component</p>
+                </div>
+              }
+            })
+            ReactDOM.render(<MyComponent />,
+                document.getElementById('react-container')
+            )
+        }
+
+        window.onload = init();
+    </script>
 </body>
 
 </html>
