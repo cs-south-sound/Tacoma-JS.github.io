@@ -6,12 +6,10 @@
 */
 
 require.config({
-	paths: {
-		//"react": "https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min",
-		//"react-dom": "https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min",
+	"paths": {
 		"jquery": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min",
 		"bootstrap": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min",
-		"showdown": "https://cdnjs.cloudflare.com/ajax/libs/showdown/1.2.3/showdown.min",
+		"showdown": "https://cdnjs.cloudflare.com/ajax/libs/showdown/1.6.4/showdown.min",
 		"app": "app"
 	},
 	"shim": {
@@ -21,7 +19,6 @@ require.config({
 	}
 })
 
-//require(["react", "react-dom", "jquery", "bootstrap", "showdown", "app"]);
 require(["jquery", "bootstrap", "showdown", "app"]);
 
 
