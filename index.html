@@ -47,26 +47,14 @@
 
                 <form class="navbar-form navbar-left">
                     <div class="form-group">
-                        <!-- Google Custom Search Engine gcse-->
-                        <script>
-                            (function() {
-                                var cx = '004738431865958924779:g-ffupbu9sm';
-                                var gcse = document.createElement('script');
-                                gcse.type = 'text/javascript';
-                                gcse.async = true;
-                                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                                var s = document.getElementsByTagName('script')[0];
-                                s.parentNode.insertBefore(gcse, s);
-                            })();
-                        </script>
-                        <gcse:search></gcse:search>
-                        <!-- end gcse-->
+                        GCSE script was here
                     </div>
                     <!-- end form-group-->
                 </form>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a data-toggle="collapse" href="#search" aria-expanded="false" aria-controls="search">Search</a></li>
+                    <li><a data-toggle="collapse" href="#search-view" aria-expanded="false" aria-controls="search-view">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
                     <li><a href="https://www.meetup.com/Tacoma-JS/join/" target="_blank">Join</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Github<span class="caret"></span></a>
@@ -85,27 +73,70 @@
 
 
     <div id="about" class="panel panel-default collapse">
-        <div class="panel-heading">About</div>
+        <div class="panel-heading">
+            <a data-toggle="collapse" href="#about" aria-expanded="false" aria-controls="about"><!-- minus sign to hide-->
+                <span class="glyphicon glyphicon-minus"aria-hidden="true"></span>
+            </a>
+            About
+        </div>
         <div class="panel-body">
             Tacoma-JS promotes computer programming in the Javascript language by hosting meetups in Tacoma, WA with topics ranging from introductory to advanced, client side and server side, plus occasional mini hackathons emphasising collaboration using pair programming tools and methods, successful patterns, and best practices.
             <br><br> Join the <a href="https://www.meetup.com/Tacoma-JS/join/">meetup</a> to receive upcoming meeting notifications.
         </div>
     </div>
 
-    <div id="howto-introduction" class="panel panel-default collapse">
-        <div class="panel-heading ">Introduction</div>
+    <div id="search-view" class="panel panel-default collapse">
+
+        <div class="panel-heading ">
+            <a data-toggle="collapse" href="#search-view" aria-expanded="false" aria-controls="search-view"><!-- minus sign to hide-->
+                <span class="glyphicon glyphicon-minus"aria-hidden="true"></span>
+            </a>Search
+        </div>
         <div class="panel-body">
+            <!-- Google Custom Search Engine gcse-->
+            <script>
+                (function() {
+                    var cx = '004738431865958924779:g-ffupbu9sm';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                })();
+            </script>
+            <gcse:search></gcse:search>
+            <!-- end gcse-->
+
+            <a href="https://support.google.com/websearch/answer/2466433?hl=en" target="_blank">Refine </a> your web search
+        </div>
+    </div>
+
+    <div id="howto-introduction" class="panel panel-default collapse">
+        <div class="panel-heading ">
+            <a data-toggle="collapse" href="#howto-introduction" aria-expanded="false" aria-controls="howto-introduction"><!-- minus sign to hide-->
+                <span class="glyphicon glyphicon-minus"aria-hidden="true"></span>
+            </a> Introduction
+        </div>
+        <div id="howto-introduction-content" class="panel-body">
             Introduction content
         </div>
     </div>
+
     <div id="howto-intermediate" class="panel panel-default collapse">
-        <div class="panel-heading">Intermediate</div>
+        <div class="panel-heading">
+            <a data-toggle="collapse" href="#howto-intermediate" aria-expanded="false" aria-controls="howto-intermediate"><!-- minus sign to hide-->
+                <span class="glyphicon glyphicon-minus"aria-hidden="true"></span>
+            </a> Intermediate</div>
         <div class="panel-body">
             intermediate content
         </div>
     </div>
     <div id="howto-advanced" class="panel panel-default collapse">
-        <div class="panel-heading">Advanced</div>
+        <div class="panel-heading">
+            <a data-toggle="collapse" href="#howto-advanced" aria-expanded="false" aria-controls="howto-advanced"><!-- minus sign to hide-->
+                <span class="glyphicon glyphicon-minus"aria-hidden="true"></span>
+            </a> Advanced</div>
         <div class="panel-body">
             advanced content
         </div>

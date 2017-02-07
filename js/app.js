@@ -1,28 +1,61 @@
 /**
-  ## file: app.js
+## file: app.js
 
+## module: tacomajsApp
+
+  - Dependencies
+    - jQuery
+    - Showdown
+
+### Usage:
+
+  - tacomajsApp.version   : returns the version string
 */
 
+// = = = = = = = = = = = = = = = = = = = = = = = = = =
+// showdown should be available here but it is not; bug.
+showdown.setFlavor('github');
 
-function loadCss(url) {
-    var link = document.createElement("link");
-    link.type = "text/css";
-    link.rel = "stylesheet";
-    link.href = url;
-    document.getElementsByTagName("head")[0].appendChild(link);
+
+var tacomajsApp = (function ($, showdown) {
+    //"use strict";
+    var my = {};
+    my.version = "rc_v0.0.2 wip";
+    my.convertMDtoHTML = function ConvertMDtoHTML(markDownFilePath, id) {
+            //convert markdown to html and send to tag 'id'
+            // Requires jQuery and showdownjs to be loaded first
+            // Usage:
+            //     expects path to a markdown file
+            //     expects html id tag name of element
+            // local example path
+            //    markDownFilePath = "example_markdown.md";
+            // from the web
+            //    markDownFilePath =
+            //         "https://raw.githubusercontent.com/jstat/jstat/master/doc/md/core.md";
+            $.get(markDownFilePath, function(markdown) {
+              // CORS rules mandate .md file be SERVED locally
+              // or remotely
+
+              var converter = new showdown.Converter();
+              var showHTML  = converter.makeHtml(markdown);
+              $(id).html(showHTML);
+            });
+        }
+
+    return my;
+}(jQuery));
+
+console.log("In file app.js version: " + tacomajsApp.version);
+
+function init(){
+    /**
+       After the page has loaded
+       Load content from markdown files
+    */
+    var pathy ="";//path to the content
+    pathy = "https://cdn.rawgit.com/getify/You-Dont-Know-JS/master/up%20%26%20going/ch1.md";
+    tacomajsApp.convertMDtoHTML(pathy,"#howto-introduction-content");
 }
 
-// http://bootswatch.com/
-loadCss("https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/sandstone/bootstrap.css");
 
-/**
-    <!-- some react containers-->
-    <!-- copied from the tutorial:
-         https://www.lynda.com/React-js-tutorials/Creating-React-component/519668/542821-4.html?autoplay=true
-    -->
-    This following code does not Babel compile with the inbrowser Babel transpiler
-    because it is not inside the <script> tag the transpiler is looking for
-    and throws an error in the web console
-*/
-
-console.log("In app.js");
+window.onload = init();
