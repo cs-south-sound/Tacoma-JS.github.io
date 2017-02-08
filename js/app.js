@@ -16,7 +16,7 @@
 
 // = = = = = = = = = = = = = = = = = = = = = = = = = =
 // showdown should be available here but it is not; BUGGY!
-require(['showdown'], function(showdown) {
+require(['showdown','jquery'], function(showdown) {
     showdown.setFlavor('github');
 
 
@@ -61,20 +61,23 @@ require(['showdown'], function(showdown) {
            After the page has loaded
            Load content from interesting markdown files
         */
-        var pathy = ""; // path to the content
+
+
+        var pathy = "";    // path to the content
         var tagId = "";    // html tag identifer
-        var url   = "";
-        var tag   = "";
+        var url   = "";    // for hyperlink
+        var hyperlink   = "";
 
         /**  YDKJ Up and going */
           pathy = "https://cdn.rawgit.com/getify/You-Dont-Know-JS/master/up%20%26%20going/ch1.md";
           tagId = "#howto-introduction-content";
-          convertMDtoHTML(pathy,tagId);// retreive the content
+          convertMDtoHTML(pathy,tagId);// retrieve and place the content
         /** Link to the next chapter */
           url = "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch2.md";
-          tag = '<a href="' + url + '">Chapter 2 Into JavaScript</a>';
-        //console.log("tag: "+tag); //debug only
-          $(tagId).append(tag);// this line is not working for some reason.
+          hyperlink = 'Chapter 2 Into JavaScript'  +
+                      '<a href="' + url + '"><span class="glyphicon glyphicon-step-forward"></span></a>';
+        //console.log("tag: "+hyperlink); //debug only
+          $("#next-chapter2").html(hyperlink);// this line is not working for some reason.
     }
 
     window.onload = init();
