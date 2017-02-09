@@ -10,16 +10,19 @@ require.config({
 		"jquery": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min",
 		"bootstrap": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min",
 		"showdown": "https://cdnjs.cloudflare.com/ajax/libs/showdown/1.6.4/showdown.min",
+		"feedek": "https://cdnjs.cloudflare.com/ajax/libs/FeedEk/3.0.0/js/FeedEk.min",
 		"app": "app"
 	},
 	"shim": {
 		"bootstrap": {"deps":["jquery"]},
+		"feedek": {"deps":["jquery"]},
 		"app": {"deps":["jquery"]},
-		"app": {"deps":["showdown"]}
+		"app": {"deps":["showdown"]},
+		"app": {"deps":["feedek"]}
 	}
 })
 
-require(["jquery", "bootstrap", "showdown", "app"]);
+require(["jquery", "bootstrap", "showdown", "feedek","app"]);
 
 
 /**

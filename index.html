@@ -11,7 +11,8 @@
 
 <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <!--   readd this class:    navbar-fixed-top -->
+    <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -27,7 +28,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                    <li><a data-toggle="collapse" href="#job-search" aria-expanded="false" aria-controls="job-search">Jobs</a></li>
+
                     <li class="active"><a href="https://www.meetup.com/Tacoma-JS/" target="_blank">Meetup<span class="sr-only">(current)</span></a></li>
+
                     <li>
                         <a data-toggle="collapse" href="#about" aria-expanded="false" aria-controls="about">About</a>
                     </li>
@@ -55,7 +59,9 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a data-toggle="collapse" href="#search-view" aria-expanded="false" aria-controls="search-view">
                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
+
                     <li><a href="https://www.meetup.com/Tacoma-JS/join/" target="_blank">Join</a></li>
+
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Github<span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -141,6 +147,24 @@
             </a> Advanced</div>
         <div class="panel-body">
             advanced content
+        </div>
+    </div>
+    <div id="job-search" class="panel panel-default collapse">
+        <div class="panel-heading">
+            <a data-toggle="collapse" href="#job-search" aria-expanded="false" aria-controls="job-search"><!-- minus sign to hide-->
+                <span class="glyphicon glyphicon-minus"aria-hidden="true"></span>
+            </a> Job Search
+        </div>
+        <div class="panel-body">
+            <!--  job search feeds -->
+                  <div id="rss-feeds1" class="well">
+                    <a href="https://www.indeed.com/jobs?q=javascript&l=Tacoma%2C+WA">Indeed</a>
+                  </div><hr>
+                  <div id="rss-feeds2" class="well">
+                    <a href="http://stackoverflow.com/jobs?sort=i&q=javascript&l=Tacoma%2C+WA%2C+United+States&d=50&u=Miles">Stackoverflow</a>
+                  </div>
+                  <div id="rss-feeds3">rss-feeds1</div><hr>
+           <!-- end job search feeds -->
         </div>
     </div>
 

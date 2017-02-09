@@ -12,11 +12,11 @@
   - tacomajsApp.version   : returns the version string
 */
 
-//console.dir(window);//debug only
+
 
 // = = = = = = = = = = = = = = = = = = = = = = = = = =
-// showdown should be available here but it is not; BUGGY!
-require(['showdown','jquery'], function(showdown) {
+
+require(['showdown','jquery','feedek'], function(showdown) {
     showdown.setFlavor('github');
 
 
@@ -78,7 +78,32 @@ require(['showdown','jquery'], function(showdown) {
                       '<a href="' + url + '"><span class="glyphicon glyphicon-step-forward"></span></a>';
         //console.log("tag: "+hyperlink); //debug only
           $("#next-chapter2").html(hyperlink);// this line is not working for some reason.
-    }
+
+
+        /** Update feed readers */
+          var feed1 = "http://rss.indeed.com/rss?q=javascript&l=Tacoma%2C+WA";
+          var feed2 = "https://stackoverflow.com/jobs/feed?sort=i&q=javascript&l=Tacoma%2C+WA%2C+United+States&d=50&u=Miles";
+          var feed3 = "http://rss.jobsearch.monster.com/rssquery.ashx?q=JavaScript-Developer&where=Seattle";
+
+        /** Usage: http://jquery-plugins.net/FeedEk/FeedEk.html */
+          $('#rss-feeds1').FeedEk({
+            "FeedUrl":feed1,
+            "MaxCount" : 10,
+            "ShowDesc" : false
+          });
+          $('#rss-feeds2').FeedEk({
+            "FeedUrl":feed2,
+            "MaxCount" : 10,
+            "ShowDesc" : false
+          });
+          $('#rss-feeds3').FeedEk({
+            "FeedUrl":feed3,
+            "MaxCount" : 10,
+            "ShowDesc" : false
+          });
+        // end update feed readers
+
+    }// end of init
 
     window.onload = init();
 
