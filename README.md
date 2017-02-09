@@ -3,7 +3,10 @@
 
 [![Join the chat at https://gitter.im/Tacoma-JS/Tacoma-JS.github.io](https://badges.gitter.im/Tacoma-JS/Tacoma-JS.github.io.svg)](https://gitter.im/Tacoma-JS/Tacoma-JS.github.io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-> This is the repository that holds the Tacoma-JS website hosted by github.io, served from the *master* branch.  Current development is previewed on a release candidate branch named *rc_v major.minor.patch*, which is then merged into the *master* after a code and content review.  Release using the [semver](http://semver.org/) numbering system.
+> This is the repository that holds the Tacoma-JS website hosted by github.io, served from the *master* branch.  Current development is previewed on a release candidate branch named *rc_v major.minor.patch*, which is then merged into the *master* after a code and content review.  Release using the [semver](http://semver.org/) numbering system. We will have several release candidates that use varied technologies.
+
+* rc_v0.0.2  bootstrap with jquery
+* rc_v0.0.3  w2ui with jquery and gunjs
 
 ### Contributing
 
