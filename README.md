@@ -3,7 +3,25 @@
 
 [![Join the chat at https://gitter.im/Tacoma-JS/Tacoma-JS.github.io](https://badges.gitter.im/Tacoma-JS/Tacoma-JS.github.io.svg)](https://gitter.im/Tacoma-JS/Tacoma-JS.github.io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-> This is the repository that holds the Tacoma-JS website hosted by github.io, served from the *master* branch.  Current development is previewed on a release candidate branch named *rc_v major.minor.patch*, which is then merged into the *master* after a code and content review.  Release using the [semver](http://semver.org/) numbering system.
+> This is the repository that holds the Tacoma-JS website hosted by github.io, served from the *master* branch.  Current development is previewed on a release candidate branch named *rc_v major.minor.patch*, which is then merged into the *master* after a code and content review.  Release using the [semver](http://semver.org/) numbering system. We will have several release candidates that use varied technologies on separate branches.
+
+### Release Canditate Branches
+
+* rc_v0.0.2  [bootstrap](http://getbootstrap.com/) with jquery, plus [showdown](https://github.com/showdownjs/showdown)
+* rc_v0.0.3  [w2ui](http://w2ui.com/web/home) with jquery and [gunjs](https://github.com/amark/gun), plus [showdown](https://github.com/showdownjs/showdown)
+
+### Features
+* Job listing for semi-local javascript work
+* Links for those larger employers that may not show up in the jobs feed; include on the jobs page
+* Links for job lists that do not have a public feed api.
+* On the jobs page show a public record database of the largest employers in the county
+* Topics for reading: Introductory, Intermediate, Advanced, Best Practices.  These should be pulled in as markdown from already completed sources.
+* Feed the next two meetups information to our front page
+* Include the google custom search engine Javascript-search for the site.
+* Link the Tacoma nodeschool page
+* Link to our meetup page
+* Link to our github pages
+* Test specs to cover the app code
 
 ### Contributing
 
@@ -66,4 +84,3 @@ To aid in collaboration on this project and to minimize heartburn please conside
 
 6. Avoid merge conflicts.
   - Working on the same file as someone else will usually cause merge conflicts that need to be resolved.  Try to avoid working on exactly the same file.
-
