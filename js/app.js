@@ -68,7 +68,7 @@ require(['showdown','jquery','feedek'], function(showdown) {
         var url   = "";    // for hyperlink
         var hyperlink   = "";
 
-        /**  YDKJ Up and going */
+        /**  YDKJ Up and going Chapter 1 */
           pathy = "https://cdn.rawgit.com/getify/You-Dont-Know-JS/master/up%20%26%20going/ch1.md";
           tagId = "#howto-introduction-content";
           convertMDtoHTML(pathy,tagId);// retrieve and place the content
@@ -78,6 +78,8 @@ require(['showdown','jquery','feedek'], function(showdown) {
                       '<a href="' + url + '"><span class="glyphicon glyphicon-step-forward"></span></a>';
         //console.log("tag: "+hyperlink); //debug only
           $("#next-chapter2").html(hyperlink);// this line is not working for some reason.
+        // end YDKJ Up and going
+
 
 
         /** Update feed readers */

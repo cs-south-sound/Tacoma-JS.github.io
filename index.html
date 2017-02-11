@@ -28,7 +28,15 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a data-toggle="collapse" href="#job-search" aria-expanded="false" aria-controls="job-search">Jobs</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jobs <span class="caret"></span></a>
+
+                        <ul class="dropdown-menu">
+
+                          <li><a data-toggle="collapse" href="#job-search" aria-expanded="false" aria-controls="job-search">Search</a></li>
+                          <li><a data-toggle="collapse" href="#pc-edb-employers" aria-expanded="false" aria-controls="pc-edb-employers">PC Employers</a></li>
+                        </ul>
+                    </li><!-- end dropdown-->
 
                     <li>
                         <a data-toggle="collapse" href="#about" aria-expanded="false" aria-controls="about">About</a>
@@ -166,10 +174,31 @@
                   <div id="rss-feeds2" class="well">
                     <a href="http://stackoverflow.com/jobs?sort=i&q=javascript&l=Tacoma%2C+WA%2C+United+States&d=50&u=Miles">Stackoverflow</a>
                   </div>
-                  <div id="rss-feeds3">rss-feeds1</div><hr>
+                  <div id="rss-feeds3">rss-feeds3</div><hr>
            <!-- end job search feeds -->
+        </div><!-- end panel body -->
+    </div><!-- end job search panel-->
+
+
+    <div id="pc-edb-employers" class="panel panel-default">
+        <div class="panel-heading">
+            <a data-toggle="collapse" href="#pc-edb-employers" aria-expanded="false" aria-controls="pc-edb-employers"><!-- minus sign to hide-->
+                <span class="glyphicon glyphicon-minus"aria-hidden="true"></span>
+            </a> Pierce County Economic Development Board List of Employers
         </div>
-    </div>
+        <div class="panel-body">
+          <!--
+             Reference:
+             https://data.cityoftacoma.org/Business/Pierce-County-EDB-Major-Employers/rwik-a55s/data
+          -->
+          <iframe id="EDB_major_employers" width="1100px" title="Pierce County EDB Major Employers" height="425px" src="https://data.cityoftacoma.org/w/rwik-a55s/?cur=DDHsqKpM38f&from=root" frameborder="0"scrolling="no"><a href="https://data.cityoftacoma.org/Business/Pierce-County-EDB-Major-Employers/rwik-a55s" title="Pierce County EDB Major Employers" target="_blank">Pierce County EDB Major Employers</a></iframe>
+          <p><a href="http://www.socrata.com/" target="_blank">Powered by Socrata</a
+          </p>
+
+
+        </div><!-- end panel body -->
+    </div><!-- end pc-edb-employers panel -->
+
 
 </body>
 
