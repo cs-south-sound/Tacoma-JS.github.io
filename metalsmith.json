@@ -2,8 +2,10 @@
   "source": "./content",
   "destination": "./dist",
   "metadata": {
-    "site": "Tacoma.js"
+    "site": "Tacoma.js",
+    "subtitle": "A meetup in the PNW"
   },
+  "clean": false,
   "plugins": {
     "metalsmith-register-helpers": {
       "directory": "layouts/helpers"
@@ -33,7 +35,6 @@
       }]
     },
     "metalsmith-markdown": {},
-    "metalsmith-html-minifier": {},
     "metalsmith-assets": {}
   }
 }

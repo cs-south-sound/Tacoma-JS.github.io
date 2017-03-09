@@ -1,6 +1,11 @@
 {{#extend 'default'}}
   {{#content 'main'}}
-    <article class="o-container--md u-mx-auto u-px3">
+    {{#each collections.pages as |page|}}
+      <li>
+        <a href="{{page.path}}">{{page.title}}</a>
+      </li>
+    {{/each}}
+    <article class="Container--md u-mxa u-px3">
       <h1>{{ this.title }}</h1>
       {{{ this.contents }}}
     </article>

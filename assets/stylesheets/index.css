@@ -6,3 +6,24 @@
 @import './components/header.css';
 
 @import 'pluton.css/utilities';
+
+
+:root {
+  --headlines: Avenir, 'Roboto Mono';
+  --default: 'Roboto Mono';
+}
+
+html {
+  background: #132D40;
+  color: white;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #51B4E8;
+}

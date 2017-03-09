@@ -1,1 +1,15 @@
-<header class='Header'>Header</header>
+<header class='Header'>
+  <h1 class='h2 u-w400'>{{title}}</h1>
+  <h1 class='h4 u-w400'>{{subtitle}}</h1>
+
+  <nav>
+    <ul>
+      {{log collections.pages}}
+      {{#each collections.pages as |page|}}
+        <li>
+          <a href="{{page.path}}">{{page.title}}</a>
+        </li>
+      {{/each}}
+    </ul>
+  </nav>
+</header>
