@@ -251,7 +251,7 @@ async@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/async/-/async-0.7.0.tgz#4429e0e62f5de0a54f37458c49f0b897eb52ada5"
 
-"async@~ 0.2.9", async@~0.2.6:
+async@~0.2.6:
   version "0.2.10"
   resolved "https://registry.yarnpkg.com/async/-/async-0.2.10.tgz#b6bbe0b0674b9d719708ca38de8c237cb526c3d1"
 
@@ -1727,12 +1727,6 @@ deep-is@~0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
 
-defaults@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/defaults/-/defaults-1.0.3.tgz#c656051e9817d9ff08ed881477f3fe4019f3ef7d"
-  dependencies:
-    clone "^1.0.2"
-
 defined@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/defined/-/defined-1.0.0.tgz#c98d9bcef75674188e110969151199e39b1fa693"
@@ -2325,13 +2319,6 @@ fs-readdir-recursive@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs-readdir-recursive/-/fs-readdir-recursive-1.0.0.tgz#8cd1745c8b4f8a29c8caec392476921ba195f560"
 
-fs-tools@^0.2.11:
-  version "0.2.11"
-  resolved "https://registry.yarnpkg.com/fs-tools/-/fs-tools-0.2.11.tgz#64a6339119f8da687be4d1fdbda37ee0f88e644c"
-  dependencies:
-    async "~ 0.2.9"
-    lodash "~ 2.4.1"
-
 fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
@@ -2564,11 +2551,15 @@ gray-matter@^2.0.0:
     extend-shallow "^2.0.1"
     js-yaml "^3.4.3"
 
+handlebars-helper-strict-equal@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/handlebars-helper-strict-equal/-/handlebars-helper-strict-equal-1.0.0.tgz#03225f5e124fd8cea55256d9d8d4f9cbe59b37f7"
+
 handlebars-layouts@^3.1.4:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/handlebars-layouts/-/handlebars-layouts-3.1.4.tgz#26b3beb931b4b877dfbf7e6feaf4058ee6228b02"
 
-handlebars@*, handlebars@4.0.6, handlebars@^4.0.6:
+handlebars@4.0.6, handlebars@^4.0.6:
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.0.6.tgz#2ce4484850537f9c97a8026d5399b935c4ed4ed7"
   dependencies:
@@ -3179,10 +3170,6 @@ lodash@^4.0.0, lodash@^4.1.0, lodash@^4.14.2, lodash@^4.2.0, lodash@^4.3.0, loda
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
-"lodash@~ 2.4.1":
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-2.4.2.tgz#fadd834b9683073da179b3eae6d9c0d15053f73e"
-
 log-symbols@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/log-symbols/-/log-symbols-1.0.2.tgz#376ff7b58ea3086a0f09facc74617eca501e1a18"
@@ -3302,14 +3289,6 @@ metalsmith-collections@^0.9.0:
     multimatch "^2.1.0"
     read-metadata "^1.0.0"
     uniq "^1.0.1"
-
-metalsmith-discover-partials@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/metalsmith-discover-partials/-/metalsmith-discover-partials-0.1.0.tgz#f8f2393bcbd5e172aca7315cdc11601e1394fb23"
-  dependencies:
-    defaults "^1.0.3"
-    fs-tools "^0.2.11"
-    handlebars "*"
 
 metalsmith-html-minifier@^2.2.0:
   version "2.2.0"

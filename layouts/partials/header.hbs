@@ -1,15 +1,13 @@
-<header class='Header'>
-  <h1 class='h2 u-w400'>{{title}}</h1>
-  <h1 class='h4 u-w400'>{{subtitle}}</h1>
-
-  <nav>
-    <ul>
-      {{log collections.pages}}
-      {{#each collections.pages as |page|}}
-        <li>
-          <a href="{{page.path}}">{{page.title}}</a>
-        </li>
-      {{/each}}
-    </ul>
-  </nav>
+<header class='Header Container--lg u-my3 u-mxa u-px3'>
+  <div class='Flex Flex--center--h Flex--wrap Flex--between u-mb3'>
+    <div class='Flex Flex--center--h'>
+      <div class='Header__logo'>
+        <img class='Header__logo' src="/TacomaJS.png" alt="" />
+      </div>
+      <h1 class='Header__title h4 u-lh1 u-w400 u-lt-5 u-caps'>{{title}}</h1>
+    </div>
+    <h2 class='h6 u-w300'>{{subtitle}}</h2>
+  </div>
+  <hr style="height: 2px; background: white;" />
+  {{> nav }}
 </header>

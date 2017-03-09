@@ -1,5 +1,10 @@
-.Header {
-  padding: 1rem;
-  background: #2971ac;
+.Header {}
+
+.Header__title {
   color: white;
+}
+
+.Header__logo {
+  margin-right: 1rem;
+  max-width: 3rem;
 }

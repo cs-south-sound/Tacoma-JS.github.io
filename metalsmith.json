@@ -7,24 +7,23 @@
   },
   "clean": false,
   "plugins": {
-    "metalsmith-register-helpers": {
-      "directory": "layouts/helpers"
-    },
-    "metalsmith-layouts": {
-      "engine": "handlebars",
-      "partials": "layouts/partials",
-      "rename": true
-    },
     "metalsmith-collections": {
       "posts": {
         "pattern": "posts/*.md",
         "sortBy": "date",
         "reverse": true
       },
+      "growth": {
+        "pattern": "growth/*.md",
+        "sortBy": "order",
+        "reverse": true
+      },
       "pages": {
-        "pattern": "*.md"
+        "pattern": "*.md",
+        "sortBy": "order"
       }
     },
+    "metalsmith-markdown": true,
     "metalsmith-permalinks": {
       "pattern": ":title",
       "relative": false,
@@ -34,7 +33,15 @@
         "date": "mmddyy"
       }]
     },
-    "metalsmith-markdown": {},
-    "metalsmith-assets": {}
+    "metalsmith-register-helpers": {
+      "directory": "layouts/helpers"
+    },
+    "metalsmith-layouts": {
+      "engine": "handlebars",
+      "partials": "layouts/partials",
+      "rename": true
+    },
+    "metalsmith-html-minifier": {},
+    "metalsmith-assets": true
   }
 }

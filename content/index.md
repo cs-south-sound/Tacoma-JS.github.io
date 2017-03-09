@@ -1,6 +1,7 @@
 ---
 title: Tacoma.js
 layout: home.hbs
+order: 1
 permalink: false
 ---
 

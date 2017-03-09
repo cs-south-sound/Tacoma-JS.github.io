@@ -1,0 +1,10 @@
+<section class='Flex Flex--wrap Flex--between u-py4'>
+  {{#each collections.growth as |g|}}
+    <div class='Flex__child GrowthBlock u-mb5 u-p3'>
+      <h4 class='h6 u-w400 u-mb2'>{{g.title}}</h4>
+      <div class='GrowthBlock__contents'>
+        {{{g.contents}}}
+      </div>
+    </div>
+  {{/each}}
+</section>

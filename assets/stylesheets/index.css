@@ -4,13 +4,15 @@
 @import 'pluton.css/objects';
 
 @import './components/header.css';
+@import './components/growthblock.css';
 
 @import 'pluton.css/utilities';
 
 
 :root {
-  --headlines: Avenir, 'Roboto Mono';
-  --default: 'Roboto Mono';
+  --headlines: var(--default);
+  --body-text: var(--default);
+  --default: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace, Courier;
 }
 
 html {

@@ -1,13 +1,10 @@
 {{#extend 'default'}}
   {{#content 'main'}}
-    {{#each collections.pages as |page|}}
-      <li>
-        <a href="{{page.path}}">{{page.title}}</a>
-      </li>
-    {{/each}}
-    <article class="Container--md u-mxa u-px3">
-      <h1>{{ this.title }}</h1>
-      {{{ this.contents }}}
-    </article>
+    <section class="Container--lg u-mxa u-px3">
+      <article>
+        {{{ this.contents }}}
+      </article>
+      {{> growth}}
+    </section>
   {{/content}}
 {{/extend}}
