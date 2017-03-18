@@ -11,12 +11,13 @@
     "css:watch": "watch 'npm run css' assets/stylesheets",
     "js": "rollup -c",
     "js:lint": "standard './assets/scripts/**/*.js' | snazzy",
-    "watch": "concurrently 'npm run css:watch' 'npm run md:watch' 'npm run hbs:watch'",
+    "watch": "concurrently 'npm run watch:*' 'npm run md:watch' 'npm run hbs:watch'",
     "serve": "browser-sync start --files  \"./dist/*.html,./dist/*.js,./dist/*.css\" --server dist",
     "dev": "concurrently 'npm run serve' 'npm run watch'",
     "start": "serve dist/",
     "build": "npm run metalsmith && npm run css && npm run js",
-    "deploy": "now && now alias"
+    "deploy:staging": "now && now alias",
+    "deploy:prod": "npm run build && gh-pages -b master -d dist"
   },
   "repository": {
     "type": "git",
@@ -36,9 +37,9 @@
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-0": "^6.22.0",
     "browser-sync": "^2.18.8",
-    "concurrently": "^3.3.0",
+    "concurrently": "^3.4.0",
     "cssnano": "^3.10.0",
-    "ghpages": "^0.0.10",
+    "gh-pages": "^0.12.0",
     "handlebars": "^4.0.6",
     "handlebars-helper-strict-equal": "^1.0.0",
     "handlebars-layouts": "^3.1.4",
@@ -49,6 +50,7 @@
     "metalsmith-html-minifier": "^2.2.0",
     "metalsmith-layouts": "^1.8.0",
     "metalsmith-markdown": "^0.2.1",
+    "metalsmith-metadata": "^0.0.4",
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-register-helpers": "^0.2.0",
     "metalsmith-to-json": "^0.1.7",
@@ -63,10 +65,12 @@
     "serve": "^3.4.1",
     "snazzy": "^6.0.0",
     "standard": "^8.6.0",
-    "watch": "^1.0.2"
+    "watch": "^1.0.2",
+    "webpack-dev-server": "^2.4.1"
   },
   "dependencies": {
     "axios": "^0.15.3",
+    "metalsmith-imagemin": "^3.0.0",
     "pluton.css": "^1.0.0"
   },
   "now": {
