@@ -1,7 +1,7 @@
 [Tacoma-JS.github.io](http://tacoma-js.github.io/)
 ===================
 
-[![Join the chat at https://gitter.im/Tacoma-JS/Tacoma-JS.github.io](https://badges.gitter.im/Tacoma-JS/Tacoma-JS.github.io.svg)](https://gitter.im/Tacoma-JS/Tacoma-JS.github.io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+THIS REPO ARCHIVED 7-APRIL 2023
 
 > This is the repository that holds the Tacoma-JS website hosted by github.io, served from the *master* branch.  Current development is previewed on a release candidate branch named *rc_v major.minor.patch*, which is then merged into the *master* after a code and content review.  Release using the [semver](http://semver.org/) numbering system. We will have several release candidates that use varied technologies on separate branches.
 
